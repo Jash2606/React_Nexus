@@ -16,9 +16,9 @@ const AttendeeList: React.FC<AttendeeListProps> = ({ attendees }) => {
     <div className="attendee-list">
       {attendees.map(attendee => (
         <div key={attendee.id} className="attendee-card">
-          <h2>{attendee.name}</h2>
-          <p>{attendee.company}</p>
-          <p>{attendee.position}</p>
+          <h2 className="text-2xl">{attendee.name}</h2>
+          <p className="text-lg">{attendee.company}</p>
+          <p className="text-lg">{attendee.position}</p>
         </div>
       ))}
     </div>
